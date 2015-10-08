@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xkq-Ch-JvS">
+                                <rect key="frame" x="32" y="28" width="350" height="29"/>
+                                <segments>
+                                    <segment title="Option 1"/>
+                                    <segment title="Option 2"/>
+                                    <segment title="Option 3"/>
+                                    <segment title="Option 4"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onOptionSelectected:" destination="vXZ-lx-hvc" eventType="valueChanged" id="UrX-Vp-Umy"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wql-Bn-Hji">
+                                <rect key="frame" x="32" y="688" width="350" height="29"/>
+                                <segments>
+                                    <segment title="0.2s"/>
+                                    <segment title="0.5s"/>
+                                    <segment title="1s"/>
+                                </segments>
+                                <color key="tintColor" red="0.33870946419999998" green="0.60976957070000004" blue="0.1253235791" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onOptionRepeatTimer:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Okn-fL-R4X"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wql-Bn-Hji" secondAttribute="bottom" constant="20" id="C2o-Pg-954"/>
+                            <constraint firstItem="Xkq-Ch-JvS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="OHj-x5-u2V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wql-Bn-Hji" secondAttribute="trailing" constant="16" id="SbJ-FV-AVl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xkq-Ch-JvS" secondAttribute="trailing" constant="16" id="jeY-WU-AAh"/>
+                            <constraint firstItem="Xkq-Ch-JvS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="l7W-ec-AGI"/>
+                            <constraint firstItem="Wql-Bn-Hji" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="m0b-2S-cJC"/>
+                            <constraint firstAttribute="centerX" secondItem="Xkq-Ch-JvS" secondAttribute="centerX" id="x7m-f2-GpZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="optionRepeatTimer" destination="Wql-Bn-Hji" id="1Gn-Os-93k"/>
+                        <outlet property="optionSelector" destination="Xkq-Ch-JvS" id="Egp-aD-Wvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

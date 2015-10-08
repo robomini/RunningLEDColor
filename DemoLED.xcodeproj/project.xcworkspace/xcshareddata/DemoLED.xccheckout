@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>18617781-3335-45C8-8AD3-BA7774F85E6A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DemoLED</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8B7F5D769C7C24DA726EC5D9F4A83B4D837CA129</key>
+		<string>https://github.com/robomini/DemoLED.git</string>
+		<key>CC8492F391E0687B38230207A233D72FD834216A</key>
+		<string>https://github.com/robomini/RunningLED.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DemoLED.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8B7F5D769C7C24DA726EC5D9F4A83B4D837CA129</key>
+		<string>../../../DemoLED</string>
+		<key>CC8492F391E0687B38230207A233D72FD834216A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/robomini/RunningLED.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC8492F391E0687B38230207A233D72FD834216A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8B7F5D769C7C24DA726EC5D9F4A83B4D837CA129</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DemoLED</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC8492F391E0687B38230207A233D72FD834216A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RunningLED</string>
+		</dict>
+	</array>
+</dict>
+</plist>
